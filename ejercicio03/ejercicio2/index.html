@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div class="jumbotron con-1">
+        <h1>Consulta</h1>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link ni" href="../ejercicio1/index.html">Empelado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled ni" href="#">Consulta</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link ni" href="../ejercicio3/index.html">Gasto</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 fr">
+                <form id="form" class="col-12 need-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" required/>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">El campo nombre es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora: </label>
+                        <input type="text" class="form-control" id="hora" required/>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">El campo es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" />
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Introduzca una fecha válida.</div>
+                    </div>
+                    <button id="btnAdd" type="button" class="btn btn-primary">Agregar</button>
+                    <button id="" type="reset" class="btn btn-danger">Reset</button>
+                </form>
+                <br>
+                <div class="col-12 border">
+                    <h4>Info</h4>
+                    <table class="table table-striped" id="info">
+                        <tbody>
+                             <tr>
+                                <td>Citas para el Lunes</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Martes</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Miercoles</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Jueves</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Viernes</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Sabado</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Citas para el Domingo</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-8 fr">
+                <table class="table" id="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Paciente</th>
+                            <th>Dias que faltan</th>
+
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js" type="module"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

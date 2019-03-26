@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+.con-1{
+    background: rgba(2, 48, 255, 0.897);
+    box-shadow: 0 0 15px rgb(5, 6, 71);
+}
+
+.ni{
+    color: white;
+    font-weight: bold;
+}
+
+.ni:hover{
+    box-shadow: 0 0 0px 1.5px rgba(0, 0, 0, 0.671);
+    border-radius: 3px;
+    background-color: rgba(2, 255, 255, 0.747);
+    color: white;
+    transition:.3s;
+}
+
+h1{
+    color: white;
+    font-family: 'arial';
+    letter-spacing: 7px;
+
+}

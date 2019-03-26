@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <div class="jumbotron con-1">
+        <h1>Empleado</h1>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link disabled ni" href="#">Empelado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ni" href="../ejercicio2/index.html">Cosulta</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link ni" href="../ejercicio3/index.html">Gasto</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 fr">
+                <form id="form" class="col-12 need-validation" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre y apelidos</label>
+                        <input type="text" class="form-control" id="name" required/>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">El campo es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="numEmpl">No. Empleado: </label>
+                        <input type="number" class="form-control" id="numEmpl" required/>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">El campo es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Sueldo">Sueldo: </label>
+                        <input type="number" class="form-control" id="sueldo" required/>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">El campo es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="birthday" />
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Introduzca una fecha válida.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contratacion">Fecha de contratacion</label>
+                        <input type="date" class="form-control" id="contratacion" />
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Introduzca una fecha válida.</div>
+                    </div>
+                    <button id="btnAdd" type="button" class="btn btn-primary">Registrar </button>
+                    <button id="" type="reset" class="btn btn-danger">Reset</button>
+                </form>
+                <br>
+                <div class="col-12 border">
+                    <h4>Datos</h4>
+                    <table class="table table-striped" id="info">
+                        <tbody>
+                             <tr>
+                                <td>Empleados con sueldo hasta $10,000</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Empleados con sueldo mayor que $10,000 y menor o igual a $20,000</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Empleados con sueldo mayor que $20,000	</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sueldo promedio</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Edad promedio</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-8 fr">
+                <table class="table" id="table" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>No. Empleado</th>
+                            <th>Nombre</th>
+                            <th>Sueldo</th>
+                            <th>Fecha de Contratacion</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Edad</th>
+                            <th>Antiguedad</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js" type="module"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
